@@ -1,0 +1,72 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', 'Montserrat', 'Bebas+Neue', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #000000;
+}
+.wrapper {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 1480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+
+  padding-left: 0px;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+button {
+  outline: none;
+  border: none;
+}
+
+.active::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  border-radius: 15px;
+  display: block;
+  background-color: white;
+}
