@@ -1,0 +1,61 @@
+.overlay_topLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //   position: absolute;
+  //   width: 100%;
+  //   top: 70px;
+}
+.overlay_topLine_moon {
+  // width: 55px;
+  // height: 55px;
+}
+
+.overlay_topLine_logo {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+}
+.overlay_topLine_button {
+  outline: none;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+.overlay_topLine_buttonMenu {
+  width: 63px;
+  height: 43px;
+}
+
+.overlay_socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+
+  left: 70px;
+  bottom: 70px;
+}
+.overlay_socials_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.overlay_text {
+  position: absolute;
+  bottom: 70px;
+  right: 70px;
+  writing-mode: vertical-rl;
+
+  font-size: 24px;
+  line-height: 29px;
+}

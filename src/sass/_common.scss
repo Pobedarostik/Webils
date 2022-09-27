@@ -20,10 +20,10 @@ ul {
 }
 
 body {
-  font-family: 'Roboto', 'Montserrat', 'Bebas+Neue', sans-serif;
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 500;
-  color: #000000;
+  font-weight: 400;
+  color: #ffffff;
 }
 .wrapper {
   max-width: 1920px;
@@ -69,4 +69,31 @@ button {
   border-radius: 15px;
   display: block;
   background-color: white;
+}
+.wrapperBackgroundPhoto {
+  background-image: linear-gradient(to right, rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)),
+    url(../images/winter.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  position: relative;
+  max-width: 1920px;
+  height: 1084px;
+
+  padding: 70px;
+
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+}
+.overlay--Black {
+  color: black;
+  & svg {
+    fill: red;
+  }
 }
