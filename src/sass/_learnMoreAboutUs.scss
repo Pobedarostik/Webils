@@ -1,0 +1,56 @@
+.learnMoreAboutUs {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #181818;
+}
+.wrapper_forImg {
+  max-width: 1480px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &::before {
+    display: block;
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    content: '';
+    height: 680px;
+    width: 1px;
+    background-color: rgb(255, 255, 255, 0.5);
+  }
+}
+.AboutUsText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 63px;
+}
+.learnMoreAboutUs_img№1 {
+  width: 699px;
+  height: 464px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../images/rabbit.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  margin-right: 115px;
+}
+.learnMoreAboutUs_img№2 {
+  width: 699px;
+  height: 464px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../images/cat.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
