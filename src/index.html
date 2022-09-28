@@ -20,9 +20,9 @@
   <body>
     <div class="wrapper">
       <div class="wrapperBackgroundPhoto">
-        <div class="overlay">
-          <include src="./partials/overlay.html"></include>
-          <include src="./partials/head.html"></include>
+        <div class="overlay overlay--main">
+          <include src="./partials/Head/overlay.html"></include>
+          <include src="./partials/Head/head.html"></include>
         </div>
       </div>
 
@@ -31,7 +31,16 @@
       <main>
         <!-- <include src="./partials/main.html"></include> -->
         <div class="overlay overlay--Black">
-          <include src="./partials/overlay.html"></include>
+          <include src="./partials/Head/overlay.html"></include>
+          <include src="./partials/Head/whoWe.html"></include>
+        </div>
+        <div class="overlay overlay--blackBackground">
+          <include src="./partials/Head/overlay.html"></include>
+          <include src="./partials/Head/recentCases.html"></include>
+        </div>
+        <div class="overlay overlay--Black">
+          <include src="./partials/Head/overlay.html"></include>
+          <include src="./partials/Head/blog.html"></include>
         </div>
       </main>
     </div>

@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-  max-width: 1480px;
+  max-width: 1510px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -79,21 +79,22 @@ button {
   background-size: cover;
 }
 
-.overlay {
+.learnMore {
   position: relative;
-  max-width: 1920px;
-  height: 1084px;
-
-  padding: 70px;
-
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
 }
-.overlay--Black {
-  color: black;
-  & svg {
-    fill: red;
+.learnMore_text {
+  font-size: 30px;
+  line-height: 37px;
+  padding-left: 140px;
+  &::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 19px;
+    left: 0;
+    width: 129px;
+    height: 1px;
+    // border: 1px solid #000000;
+    background-color: rgb(0, 0, 0, 0.5);
   }
 }

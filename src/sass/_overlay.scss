@@ -1,3 +1,74 @@
+.overlay {
+  position: relative;
+  max-width: 1920px;
+  height: 1084px;
+
+  padding: 70px;
+}
+.overlay--main {
+  .overlay_topLine_moon {
+    display: block;
+  }
+}
+.overlay--Black {
+  color: black;
+  & svg {
+    fill: #fff;
+    stroke: black;
+  }
+
+  .overlay_topLine_text {
+    display: block;
+  }
+  .overlay_topLine_logo {
+    margin-left: -320px;
+  }
+  .overlay_socials_item {
+    background-color: black;
+    &:hover {
+      background-color: white;
+      border: 1px solid black;
+    }
+  }
+}
+.overlay--blackBackground {
+  color: #fff;
+  // background: radial-gradient(
+  //     62.82% 62.82% at 66.22% 47.73%,
+  //     rgba(72, 72, 72, 0.2) 0%,
+  //     rgba(0, 0, 0, 0) 100%
+  //   ),
+  //   #181818;
+  background-color: #181818;
+  & svg {
+    stroke: #fff;
+  }
+
+  .overlay_topLine_text {
+    display: block;
+    &::before {
+      background-color: rgb(255, 255, 255, 0.5);
+    }
+  }
+  .overlay_topLine_logo {
+    margin-left: -320px;
+  }
+
+  .learnMore_text {
+    &::before {
+      background-color: rgb(255, 255, 255, 0.5);
+    }
+  }
+
+  // .overlay_socials_item {
+  //   background-color: black;
+  //   &:hover {
+  //     background-color: white;
+  //     border: 1px solid black;
+  //   }
+  // }
+}
+
 .overlay_topLine {
   display: flex;
   justify-content: space-between;
@@ -5,10 +76,30 @@
   //   position: absolute;
   //   width: 100%;
   //   top: 70px;
+  position: relative;
 }
 .overlay_topLine_moon {
-  // width: 55px;
-  // height: 55px;
+  display: none;
+  fill: #fff;
+}
+.overlay_topLine_text {
+  font-size: 30px;
+  line-height: 37px;
+  padding-left: 140px;
+  color: inherit;
+
+  display: none;
+  &::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 23px;
+    left: 0;
+    width: 129px;
+    height: 1px;
+    // border: 1px solid #000000;
+    background-color: rgb(0, 0, 0, 0.5);
+  }
 }
 
 .overlay_topLine_logo {
@@ -24,8 +115,7 @@
   cursor: pointer;
 }
 .overlay_topLine_buttonMenu {
-  width: 63px;
-  height: 43px;
+  stroke: #fff;
 }
 
 .overlay_socials {
@@ -47,6 +137,17 @@
   border-radius: 50%;
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+  &:hover {
+    .overlay_socials_item_youtube {
+      fill: red;
+    }
+    .overlay_socials_item_facebook {
+      fill: blue;
+    }
+    .overlay_socials_item_instagram {
+      fill: orangered;
+    }
   }
 }
 

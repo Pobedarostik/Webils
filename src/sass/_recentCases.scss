@@ -1,0 +1,50 @@
+.recentCases {
+  padding-top: 75px;
+}
+.wrapper_forRecentCases {
+  display: flex;
+}
+
+.recentCases_header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 161px;
+}
+.slaider {
+  margin-bottom: 41px;
+}
+.slaider_header {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 41px;
+}
+.slaider_text {
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 30px;
+}
+.slaider_button {
+  width: 83px;
+  height: 83px;
+  background-color: #181818;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.slaider_button-left {
+  & svg {
+    transform: rotate(90deg);
+  }
+}
+
+.slaider_button-right {
+  & svg {
+    transform: rotate(270deg);
+  }
+}
+.recentCases_divForImg {
+  & img {
+    width: 780px;
+  }
+}
