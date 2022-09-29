@@ -30,6 +30,7 @@
 .wrapper_forBlog {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .blog_divForText {
@@ -52,6 +53,7 @@
 .blog_divForImg {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   .blog_img-№1 {
     max-width: 576px;
     margin-right: 39px;
@@ -61,10 +63,8 @@
     margin-top: 52px;
   }
 }
-.learnMore {
+.blog .learnMore {
   position: absolute;
   top: 0;
   right: 0;
-}
-.learnMore_text {
 }

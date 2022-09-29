@@ -126,6 +126,8 @@
 
   left: 70px;
   bottom: 70px;
+
+  z-index: 5;
 }
 .overlay_socials_item {
   display: flex;
@@ -159,4 +161,6 @@
 
   font-size: 24px;
   line-height: 29px;
+
+  z-index: 5;
 }
