@@ -23,6 +23,7 @@ const refs = {
   modal: document.querySelector('[data-modal]'),
   btnOpenModal: document.querySelector('.buttonJS'),
   btnCloseModal: document.querySelector('[data-modal-close]'),
+  // body: document.querySelector('body'),
 };
 
 // console.log(refs.btnOpenModal[3].offsetParent.offsetParent.children[3].children[0].className);
@@ -32,4 +33,5 @@ refs.btnCloseModal.addEventListener('click', toggleModal);
 
 function toggleModal(e) {
   refs.modal.classList.toggle('is-hidden');
+  // refs.body.classList.toggle('owerflow');
 }

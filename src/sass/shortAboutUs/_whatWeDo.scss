@@ -1,0 +1,46 @@
+.whatWeDo {
+  padding-top: 90px;
+}
+.whatWeDo_list_item_wrapper {
+  display: flex;
+  svg {
+    margin-right: 18px;
+  }
+}
+.whatWeDo_header {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 45px;
+}
+.whatWeDo_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.whatWeDo_list_item {
+  max-width: 385px;
+  margin-bottom: 70px;
+  //   &:not(:nth-child(3n + 3)) {
+  //     margin-right: 70px;
+  //   }
+}
+.whatWeDo_list_item_header {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 17px;
+
+  &::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: rgb(0, 0, 0, 0.5);
+    margin-top: 17px;
+  }
+}
+.whatWeDo_list_item_text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}

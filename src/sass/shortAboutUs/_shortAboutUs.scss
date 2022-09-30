@@ -1,0 +1,39 @@
+.shortAboutUS {
+  padding-top: 70px;
+  .learnMore {
+    margin-bottom: 58px;
+  }
+}
+.shortAboutUS_divForTextOne {
+  max-width: 1179px;
+}
+.shortAboutUS_header {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 48px;
+}
+.shortAboutUS_text {
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 63px;
+}
+
+.shortAboutUS_list {
+  display: flex;
+  justify-content: space-between;
+}
+.shortAboutUS_list_item {
+  max-width: 276px;
+}
+.shortAboutUS_list_item_span {
+  display: block;
+  font-size: 75px;
+  line-height: 91px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+}
+.shortAboutUS_list_item_text {
+  font-size: 28px;
+  line-height: 34px;
+}

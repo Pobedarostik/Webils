@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,38 +20,26 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="wrapperBackgroundPhoto">
-        <div class="overlay overlay--main">
-          <include src="./partials/overlay.html"></include>
-          <include src="./partials/Head/head.html"></include>
-          <include src="./partials/modal.html"></include>
-        </div>
-      </div>
-
-      <!-- <include src="./partials/header.html"></include> -->
-
       <main>
-        <!-- <include src="./partials/main.html"></include> -->
         <div class="overlay overlay--Black">
           <include src="./partials/overlay.html"></include>
-          <include src="./partials/Head/whoWe.html"></include>
+          <include src="./partials/About/shortAboutUs.html"></include>
         </div>
         <div class="overlay overlay--blackBackground">
           <include src="./partials/overlay.html"></include>
-          <include src="./partials/Head/recentCases.html"></include>
+          <include src="./partials/About/instagram.html"></include>
         </div>
         <div class="overlay overlay--Black">
           <include src="./partials/overlay.html"></include>
-          <include src="./partials/Head/blog.html"></include>
+          <include src="./partials/About/whatWeDo.html"></include>
         </div>
-        <include src="./partials/Head/learnMoreAboutUs.html"></include>
+        <div class="overlay overlay--Black">
+          <include src="./partials/overlay.html"></include>
+          <include src="./partials/form.html"></include>
+        </div>
       </main>
-      <footer>
-        <include src="./partials/footer.html"></include>
-      </footer>
     </div>
 
     <!-- <script src="./index.js"></script> -->
-    <script src="./modal.js"></script>
   </body>
 </html>

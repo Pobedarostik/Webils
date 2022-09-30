@@ -1,0 +1,16 @@
+.instagram {
+}
+
+.instagram_list {
+  display: flex;
+  margin-bottom: 57px;
+}
+.instagram_list_item {
+  img {
+    max-width: 427px;
+    max-height: 427px;
+  }
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}

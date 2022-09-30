@@ -26,7 +26,6 @@ body {
   color: #ffffff;
 }
 .wrapper {
-
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
@@ -98,4 +97,19 @@ button {
     // border: 1px solid #000000;
     background-color: rgb(0, 0, 0, 0.5);
   }
+}
+
+// .owerflow {
+//   overflow: hidden;
+// }
+
+.about {
+  color: red;
+}
+
+.center {
+  height: 891px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
