@@ -1,0 +1,37 @@
+.team {
+}
+.team_header {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 40px;
+}
+
+.team_list {
+  display: flex;
+  margin-bottom: 30px;
+}
+.team_list_item {
+  img {
+    max-width: 427px;
+    max-height: 427px;
+    margin-bottom: 13px;
+  }
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+.team_list_item_name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 9px;
+}
+.team_list_item_position {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.wrapper_forButton {
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+.cases {
+  padding-top: 70px;
+  color: white;
+
+  .learnMore {
+    align-self: end;
+  }
+  .learnMore_text {
+    padding: 0;
+    font-size: 50px;
+    &::before {
+      display: none;
+    }
+  }
+}
+.cases_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cases_list_item {
+  width: 476px;
+  height: 354px;
+  margin-bottom: 25px;
+  background-color: #181818;
+  &:not(:nth-child(3n + 3)) {
+    margin-right: 25px;
+  }
+}
+.cases_list_item_link {
+  display: flex;
+  padding: 40px;
+}
+.cases_list_item_header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  margin-right: 6px;
+}
+.cases_list_item_img {
+  width: 239px;
+  height: 282px;
+}
