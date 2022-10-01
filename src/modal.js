@@ -23,10 +23,8 @@ const refs = {
   modal: document.querySelector('[data-modal]'),
   btnOpenModal: document.querySelector('.buttonJS'),
   btnCloseModal: document.querySelector('[data-modal-close]'),
-  // body: document.querySelector('body'),
 };
 
-// console.log(refs.btnOpenModal[3].offsetParent.offsetParent.children[3].children[0].className);
 refs.btnOpenModal.addEventListener('click', toggleModal);
 
 refs.btnCloseModal.addEventListener('click', toggleModal);
