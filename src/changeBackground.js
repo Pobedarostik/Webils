@@ -1,11 +1,13 @@
-const container = document.querySelector('.main');
-const background = document.querySelector('.wrapperBackgroundPhoto');
-const links = document.querySelectorAll('.main a');
-container.onmouseover = container.onmouseout = changeBack;
 import sea from './images/seo.jpg';
 import yandex from './images/yandex.jpg';
 import insta from './images/insta.jpg';
 import google from './images/google.jpg';
+
+const container = document.querySelector('.main');
+const background = document.querySelector('.wrapperBackgroundPhoto');
+const links = document.querySelectorAll('.main a');
+
+container.onmouseover = container.onmouseout = changeBack;
 
 links.forEach(link => {
   link.addEventListener('mousemove', changeBack);
