@@ -2,6 +2,10 @@ const container = document.querySelector('.main');
 const background = document.querySelector('.wrapperBackgroundPhoto');
 const links = document.querySelectorAll('.main a');
 container.onmouseover = container.onmouseout = changeBack;
+import sea from './images/seo.jpg';
+import yandex from './images/yandex.jpg';
+import insta from './images/insta.jpg';
+import google from './images/google.jpg';
 
 links.forEach(link => {
   link.addEventListener('mousemove', changeBack);
@@ -10,20 +14,16 @@ links.forEach(link => {
 function changeBack(e) {
   switch (e.currentTarget.id) {
     case 'seo':
-      background.style.backgroundImage =
-        'linear-gradient(to right, rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)),url(./seo.abdcf491.jpg)';
+      background.style.backgroundImage = `linear-gradient(to right, rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)),url(${sea})`;
       break;
     case 'yandex':
-      background.style.backgroundImage =
-        'linear-gradient(to right, rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)),url(./yandex.5019a1df.jpg)';
+      background.style.backgroundImage = `linear-gradient(to right, rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)),url(${yandex})`;
       break;
     case 'insta':
-      background.style.backgroundImage =
-        'linear-gradient(to right, rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)),url(./insta.5724c782.jpg)';
+      background.style.backgroundImage = `linear-gradient(to right, rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)),url(${insta})`;
       break;
     case 'gogl':
-      background.style.backgroundImage =
-        'linear-gradient(to right, rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)),url(./gogl.c1a37877.jpg)';
+      background.style.backgroundImage = `linear-gradient(to right, rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)),url(${google})`;
       break;
     default:
       return (background.style.backgroundImage = '');
