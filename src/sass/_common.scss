@@ -71,6 +71,7 @@ button {
   background-color: white;
 }
 .wrapperBackgroundPhoto {
+  position: relative;
   background-image: linear-gradient(to right, rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)),
     url(../images/winter.jpg);
 

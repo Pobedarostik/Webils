@@ -1,7 +1,7 @@
 .overlay {
   position: relative;
   max-width: 1920px;
-  min-height: 1084px;
+  min-height: 1080px;
 
   padding: 70px;
 }
@@ -29,6 +29,15 @@
       background-color: white;
       border: 1px solid black;
     }
+  }
+}
+
+.without_SocialAndText {
+  .overlay_socials {
+    display: none;
+  }
+  .overlay_text {
+    display: none;
   }
 }
 .overlay--blackBackground {
