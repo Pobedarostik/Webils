@@ -96,6 +96,12 @@
     // border: 1px solid #000000;
     background-color: rgb(0, 0, 0, 0.5);
   }
+  &:hover {
+    color: #3b63f5;
+    &::before {
+      background-color: #3b63f5;
+    }
+  }
 }
 
 .overlay_topLine_logo {
@@ -111,6 +117,9 @@
   cursor: pointer;
   &:hover {
     transform: scale(1.2);
+    svg {
+      stroke: #3b63f5;
+    }
   }
 }
 .overlay_topLine_buttonMenu {

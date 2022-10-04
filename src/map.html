@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,30 +21,14 @@
   <body>
     <div class="wrapper">
       <main>
-        <div class="overlay overlay--Black">
+        <div class="overlay overlay--blackBackground">
           <include src="./partials/overlay.html"></include>
-          <include src="./partials/About/shortAboutUs.html"></include>
+          <div class="darkWrapperForForm">
+            <include src="./partials/form.html"></include>
+          </div>
           <include src="./partials/modal.html"></include>
         </div>
-        <div class="overlay overlay--blackBackground">
-          <include src="./partials/overlay.html"></include>
-          <include src="./partials/About/instagram.html"></include>
-        </div>
-        <div class="overlay overlay--Black">
-          <include src="./partials/overlay.html"></include>
-          <include src="./partials/About/whatWeDo.html"></include>
-        </div>
-        <div class="overlay overlay--Black">
-          <include src="./partials/overlay.html"></include>
-          <include src="./partials/form.html"></include>
-        </div>
-        <div class="overlay overlay--blackBackground">
-          <include src="./partials/overlay.html"></include>
-          <include src="./partials/About/team.html"></include>
-        </div>
-
-        <include src="./partials/About/compains.html"></include>
-
+        <include src="./partials/Map/map.html"></include>
         <include src="./partials/learnMoreAboutUs.html"></include>
       </main>
       <footer>

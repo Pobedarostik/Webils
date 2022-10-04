@@ -1,7 +1,7 @@
-import sea from './images/seo.jpg';
-import yandex from './images/yandex.jpg';
-import insta from './images/insta.jpg';
-import google from './images/google.jpg';
+import sea from './img/seo.jpg';
+import yandex from './img/yandex.jpg';
+import insta from './img/insta.jpg';
+import google from './img/google.jpg';
 
 const container = document.querySelector('.main');
 const background = document.querySelector('.wrapperBackgroundPhoto');

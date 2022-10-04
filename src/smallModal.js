@@ -1,29 +1,31 @@
-const smallModal = document.querySelector('.smallModal');
-const btnOpen = document.querySelector('.main_arrowDown');
-const formContent = document.querySelector('.smallModal_wrapperContent');
-const btnClosed = document.querySelector('.smallModal_btnClosed');
-const btnSubmit = document.querySelector('.smallModal_form_button');
-const input = document.querySelector('.smallModal_form_input');
-const succesContent = document.querySelector('.smallModal_succes');
-const body = document.querySelector('body');
+const refs = {
+  smallModal: document.querySelector('.smallModal'),
+  btnOpen: document.querySelector('.main_arrowDown'),
+  formContent: document.querySelector('.smallModal_wrapperContent'),
+  btnClosed: document.querySelector('.smallModal_btnClosed'),
+  btnSubmit: document.querySelector('.smallModal_form_button'),
+  input: document.querySelector('.smallModal_form_input'),
+  succesContent: document.querySelector('.smallModal_succes'),
+  body: document.querySelector('body'),
+};
 
-btnOpen.addEventListener('click', openModal);
-btnClosed.addEventListener('click', closeModal);
-btnSubmit.addEventListener('click', submit);
+refs.btnOpen.addEventListener('click', openModal);
+refs.btnClosed.addEventListener('click', closeModal);
+refs.btnSubmit.addEventListener('click', submit);
 
 function toggleModal() {
-  smallModal.classList.toggle('hidden');
+  refs.smallModal.classList.toggle('hidden');
 }
 const array = [];
 
 function submit(e) {
-  // e.preventDefault();
+  e.preventDefault();
 
-  // array.push(input.value);
-  // input.value = '';
-  // // toggleModal();
-  // formContent.style.display = 'none';
-  // succesContent.style.display = 'flex';
+  array.push(refs.input.value);
+  refs.input.value = '';
+  // toggleModal();
+  refs.formContent.style.display = 'none';
+  refs.succesContent.style.display = 'flex';
   console.log(array);
 }
 
@@ -31,8 +33,8 @@ function openModal(event) {
   event.preventDefault();
   window.addEventListener('keydown', closeModalOnEckape);
   toggleModal();
-  formContent.style.display = '';
-  succesContent.style.display = '';
+  refs.formContent.style.display = '';
+  refs.succesContent.style.display = '';
 }
 
 function closeModal(event) {

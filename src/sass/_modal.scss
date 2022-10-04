@@ -73,6 +73,9 @@
 }
 
 // nojno
+.wrapper_forModal {
+  margin-top: 60px;
+}
 
 .modal_header {
   display: block;
@@ -195,6 +198,7 @@
 .modal .learnMore_text {
   color: inherit;
   &::before {
+    cursor: pointer;
     background-color: rgb(255, 255, 255, 0.5);
   }
 }
