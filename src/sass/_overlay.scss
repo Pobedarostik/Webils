@@ -27,7 +27,7 @@
     background-color: black;
     &:hover {
       background-color: white;
-      border: 1px solid black;
+      border: 0.5px solid rgb(0, 0, 0, 0.5);
     }
   }
 }
@@ -42,12 +42,7 @@
 }
 .overlay--blackBackground {
   color: #fff;
-  // background: radial-gradient(
-  //     62.82% 62.82% at 66.22% 47.73%,
-  //     rgba(72, 72, 72, 0.2) 0%,
-  //     rgba(0, 0, 0, 0) 100%
-  //   ),
-  //   #181818;
+
   background-color: #181818;
   & svg {
     stroke: #fff;
@@ -68,14 +63,6 @@
       background-color: rgb(255, 255, 255, 0.5);
     }
   }
-
-  // .overlay_socials_item {
-  //   background-color: black;
-  //   &:hover {
-  //     background-color: white;
-  //     border: 1px solid black;
-  //   }
-  // }
 }
 
 .overlay_topLine {
@@ -122,6 +109,9 @@
   border: none;
   background-color: inherit;
   cursor: pointer;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 .overlay_topLine_buttonMenu {
   stroke: #fff;
@@ -154,10 +144,10 @@
       fill: red;
     }
     .overlay_socials_item_facebook {
-      fill: blue;
+      fill: #4267b2;
     }
     .overlay_socials_item_instagram {
-      fill: orangered;
+      fill: #fb3958;
     }
   }
 }

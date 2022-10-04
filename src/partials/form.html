@@ -1,4 +1,4 @@
-<section class="section_form">
+<section class="section_form" id="form">
   <div class="container">
     <form class="form">
       <b class="form_header">Оставить заявку</b>
@@ -47,6 +47,7 @@
         <div class="form_personalData_items">
           <label for="name-lastName">
             <input
+              id="form_inputName"
               class="form_personalData_items_inputName"
               name="name-lastName"
               type="text"
@@ -55,12 +56,14 @@
           </label>
           <label for="name-lastName">
             <input
+              id="form_inputPhone"
               class="form_personalData_items_inputPhone"
               name="phone-number"
               type="tel"
               placeholder="Номер телефона"
             />
           </label>
+          <!-- pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" -->
         </div>
       </div>
       <div class="form_wish">
@@ -69,12 +72,14 @@
           class="form_wish_textarea"
           placeholder="Опишите свой проект"
           name="wish"
-          id="wish"
+          id="form_textArea"
         ></textarea>
       </div>
+      <div class="learnMore">
+        <button id="form_btnSubmit" type="submit" class="learnMore_text button_form">
+          Получить обратную связь
+        </button>
+      </div>
     </form>
-    <div class="learnMore">
-      <a href="" class="learnMore_text">Получить обратную связь</a>
-    </div>
   </div>
 </section>

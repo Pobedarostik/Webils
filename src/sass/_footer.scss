@@ -14,12 +14,16 @@
 .wrapper_forFooter {
 }
 .footer_header {
+  display: block;
   font-size: 36px;
   line-height: 44px;
 
   text-align: center;
 
   margin-bottom: 69px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }
 
 .footer_list {
@@ -37,6 +41,26 @@
   }
   &:not(:last-child) {
     margin-right: 30px;
+  }
+}
+.footer_list_item-instagram:hover {
+  svg {
+    fill: #fb3958;
+  }
+}
+.footer_list_item-facebook:hover {
+  svg {
+    fill: #4267b2;
+  }
+}
+.footer_list_item-linkin:hover {
+  svg {
+    fill: #0077b5;
+  }
+}
+.footer_list_item-youtube:hover {
+  svg {
+    fill: red;
   }
 }
 .footer_nav {
@@ -73,6 +97,9 @@
   text-align: center;
   &:not(:last-child) {
     margin-bottom: 17px;
+  }
+  &:hover {
+    transform: scale(1.2);
   }
 }
 // .footer_nav_socials {

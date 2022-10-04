@@ -1,35 +1,30 @@
-// (() => {
-//   const refs = {
-//     modal: document.querySelector('[data-modal]'),
-//     openModalBtn: document.querySelector('[data-modal-open]'),
-
-//     // btnSubmit: document.querySelector('.buttonJS'),
-//   };
-
-//   refs.openModalBtn.addEventListener('click', toggleModal);
-//   //   refs.btnSubmit.addEventListener('click', submit);
-
-//   //   function submit(e) {
-//   //     e.preventDefault();
-//   //     console.log('submit');
-//   //     toggleModal();
-//   //   }
-
-//   function toggleModal() {
-//     refs.modal.classList.toggle('is-hidden');
-//   }
-// })();
 const refs = {
   modal: document.querySelector('[data-modal]'),
   btnOpenModal: document.querySelector('.buttonJS'),
   btnCloseModal: document.querySelector('[data-modal-close]'),
 };
 
-refs.btnOpenModal.addEventListener('click', toggleModal);
+refs.btnOpenModal.addEventListener('click', openOverlay);
 
-refs.btnCloseModal.addEventListener('click', toggleModal);
+refs.btnCloseModal.addEventListener('click', closeOverlay);
 
 function toggleModal(e) {
   refs.modal.classList.toggle('is-hidden');
-  // refs.body.classList.toggle('owerflow');
+}
+
+function openOverlay(event) {
+  event.preventDefault();
+  window.addEventListener('keydown', closeOverlayOnEckape);
+  toggleModal();
+}
+
+function closeOverlay() {
+  toggleModal();
+  window.removeEventListener('keydown', closeOverlayOnEckape);
+}
+
+function closeOverlayOnEckape(event) {
+  if (event.code === 'Escape') {
+    closeOverlay();
+  }
 }

@@ -34,4 +34,10 @@
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
+
+  &:hover {
+    svg {
+      transform: scale(1.5);
+    }
+  }
 }

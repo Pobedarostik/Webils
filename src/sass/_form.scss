@@ -2,6 +2,7 @@
   font-size: 24px;
   line-height: 29px;
   padding-top: 75px;
+  // background-color: #181818;
 }
 .form {
 }
@@ -37,18 +38,23 @@
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+    background-color: inherit;
   }
   svg {
-    vertical-align: text-top;
+    // display: none;
+    vertical-align: top;
     border: 2px solid #212121;
     border-radius: 5px;
     margin-right: 5px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: transparent;
+    stroke: transparent;
   }
   input:checked + svg {
     border-color: rgb(0, 0, 0, 0.5);
     background-color: #2196f3;
+    fill: white;
   }
 }
 .form_personalData {
@@ -66,6 +72,7 @@
     border: none;
     border-bottom: 1px solid rgb(0, 0, 0);
     padding: 5px 15px;
+    background-color: inherit;
     &::placeholder {
       font-size: 14px;
       line-height: 17px;
@@ -73,6 +80,7 @@
     }
   }
 }
+
 .form_personalData_items_inputName {
   margin-right: 25px;
 }
@@ -93,6 +101,7 @@
   border: none;
   border-bottom: 1px solid rgb(0, 0, 0);
   padding: 5px 15px;
+  background-color: inherit;
   &::placeholder {
     font-size: 14px;
     line-height: 17px;
@@ -101,7 +110,40 @@
   font: inherit;
   resize: none;
 }
-.learnMore {
+
+.darkWrapperForForm {
+  .section_form {
+    background-color: #181818;
+  }
+  svg {
+    border: 2px solid #535353;
+  }
+  input {
+    border-bottom: 1px solid rgb(255, 255, 255, 0.8);
+    color: white;
+    &::placeholder {
+      color: rgb(255, 255, 255, 0.8);
+    }
+  }
+  .form_wish_textarea {
+    color: white;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.8);
+    &::placeholder {
+      color: rgb(255, 255, 255, 0.8);
+    }
+  }
+  .learnMore_text::before {
+    background-color: rgb(255, 255, 255, 0.8);
+  }
 }
-.learnMore_text {
+
+.button_form {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: inherit;
+  &:hover {
+    color: #3b63f5;
+  }
 }

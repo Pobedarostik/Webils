@@ -97,7 +97,7 @@
 <line x1="0.00193797" y1="10.5" x2="129.002" y2="11" stroke="white"/>
 <path d="M120 1C123 6 124.5 8 129 11.08C125.213 13.5784 123 16 120 20.5" stroke="white" stroke-linecap="round"/>
 </symbol>
-<symbol id="icon-check" viewBox="0 0 32 32"><path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4267" d="M8.442 16.538l-0.147-0.141-0.147 0.139-2.057 1.95 0.162 0.156 7.605 7.253 0.147-0.141 16.171-15.426-0.162-0.154-2.029-1.935-0.147 0.141-13.98 13.325-5.417-5.167z"></path></symbol>
+<symbol id="icon-check" viewBox="0 0 32 32"><path  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4267" d="M8.442 16.538l-0.147-0.141-0.147 0.139-2.057 1.95 0.162 0.156 7.605 7.253 0.147-0.141 16.171-15.426-0.162-0.154-2.029-1.935-0.147 0.141-13.98 13.325-5.417-5.167z"></path></symbol>
 
 
 <symbol id="youtube" viewBox="0 0 32 32">

@@ -84,6 +84,17 @@ button {
 
 .learnMore {
   position: relative;
+  width: fit-content;
+  &:hover {
+    color: rgb(59, 99, 245);
+
+    .learnMore_text {
+      font-size: 33px;
+      &::before {
+        background-color: rgb(59, 99, 245);
+      }
+    }
+  }
 }
 .learnMore_text {
   font-size: 30px;
